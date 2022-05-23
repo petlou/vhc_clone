@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #ffffff;
+
+  --black: #000000;
+
+  --main-color-500: #b2a482;
+
+  --font-color-regular: #5b5959;
+  --font-color-bold: #424141;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  background: var(--white);
+}
+
+::-webkit-scrollbar-track {
+  border: solid 2px var(--white);
+  background-color: lighten(#b2a482, 35);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  border: solid 2px var(--white);
+  background: var(--main-color-500);
+}
+
+@font-face {
+  font-family: 'Avenir Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Avenir Next LT Pro Regular'),
+    url('/fonts/AvenirNextLTPro-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Avenir Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Avenir Next LT Pro Bold'),
+    url('/fonts/AvenirNextLTPro-Bold.woff') format('woff');
+}
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+
+@media (max-width: 720px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
+body {
+  background-color: var(--white);
+  color: var(--font-color-bold);
+}
+
+body,
+input,
+textarea,
+select,
+button {
+  font: 400 1rem 'Avenir Regular', sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
